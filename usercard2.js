@@ -1,9 +1,9 @@
-let Viratinfo{
+let sachininfo{
     imgurl: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Sachin-Tendulkar_%28cropped%29.jpg/330px-Sachin-Tendulkar_%28cropped%29.jpg",
     name: "sachin tendulkar",
     Description: Indian Cricketer
 }
-let yuvrajnewinfo = {
+let sachinnewinfo = {
     imgurl: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Sachin-Tendulkar_%28cropped%29.jpg/330px-Sachin-Tendulkar_%28cropped%29.jpg"
     name: "sachin tendulkar",
     description: "Man of the Series - World Cup 2011"
