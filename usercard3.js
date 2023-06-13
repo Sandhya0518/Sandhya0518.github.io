@@ -4,20 +4,23 @@ let sachininfo = {
     Description: "Indian Cricketer"
 }
 
-let displayobject;
+let displayobject = {
+    name: "",
+    imgurl: "",
+    description: ""
+};
 
 let getRandomUser = function(){
     fetch("https://randomuser.me/api")
     .then(response => response.json())
-    .then(data => console.log(data))
     .then(data => {
         displayobject.name = data.results[0].name.first + " " + data.results[0].name.last
         //displayobject.name = "sandhya" 
         displayobject.imgurl = data.results[0].picture.large
         displayobject.description = data.results[0].gender
-        document.getElementById("ywc").src=displayobject.imgurl;
-        document.getElementById("ywc-name").innerHTML=displayobject.name;
-        document.getElementById("ywc-des").innerHTML = displayobject.description;
+        document.getElementById("sachin-img").src=displayobject.imgurl;
+        document.getElementById("sachin").innerHTML=displayobject.name;
+        document.getElementById("sachin-desc").innerHTML = displayobject.description;
     })
 
 }
